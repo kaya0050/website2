@@ -1,0 +1,264 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400);
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+@keyframes fadeout{
+    0% {
+        opacity:1;
+      }
+      100% {
+        opacity:0;
+    }
+    
+}
+.overlay {
+    animation: 3s ease-in 0s 1 fadeout;
+    animation-fill-mode: forwards;
+    pointer-events: none;
+    
+    position: fixed; /* Sit on top of the page content */
+    /*display: none;  Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0, 0, 0); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+
+      
+      
+    
+    
+  }
+@keyframes slideInLeft {
+    0% {
+      transform: translateX(-500%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .buttonimgs {
+    animation: 1s ease-out 0s 1 slideInLeft;
+    
+    padding: 40px;
+  }
+
+
+@keyframes slideInRight{
+    0% {
+        transform: translateX(+500%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+  }
+  header{
+    animation: 1s ease-out 0s 1 slideInRight;
+    
+    padding: 40px;
+  }
+
+
+    
+
+a {
+    color: darkslategrey;
+    font-family: "lato";
+
+}
+
+li {
+    padding: 10px;
+    display: inline;
+    
+}
+
+.navbar {
+    color: white;
+    padding: 5px;
+    background-color: black;
+    justify-content: flex-start;
+    font-family: "lato";
+    font-weight: bold;
+    font-size: x-large;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+    
+    
+}
+
+
+.banner {
+    
+    
+    padding: 60px 0;
+    text-align: center;
+    background-color: white;
+    border: 10px;
+    border-width: 10px;
+    border-style: solid;
+
+    border-color: black;
+    
+    
+    
+    
+    
+    
+
+}
+
+
+.art {
+
+    color: white;
+    font-family: "lato";
+    font-weight: bold;
+    font-size: x-large;
+
+    text-align: center;
+    padding: 50px ;
+    
+    
+    background-color: black
+    
+
+}
+.engines{
+    color: white;
+    font-family: "lato";
+    font-weight: bold;
+    font-size: x-large;
+    
+    text-align: center;
+    padding: 50px 0;
+    
+    
+    background-color: black
+
+    
+}
+
+.programmeren{
+    color: white;
+    font-family: "lato";
+    font-weight: bold;
+    font-size: x-large;
+
+    text-align: center;
+    padding: 50px 0;
+    
+    
+    background-color: black
+
+}
+
+
+.footer {
+    border-color: black;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    justify-content: flex-start;
+    font-family: "lato";
+    font-weight: bold;
+    font-size: x-large;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-style: solid;
+    border-color: black;
+    border-width: 10px;
+
+    
+    text-align: center;
+}
+
+
+/* buttons */
+.nestedimg   {
+    width: 200px;
+    
+    border: none;
+    
+}
+.buttonimgs{
+    border: none;
+}
+.buttonicon{
+    border: none;
+}
+
+
+button{
+    background: transparent;
+    
+}
+
+input {
+    width: 50px;
+    border-radius: 10px;
+}
+
+img {
+    
+    width: 50px;
+    border: 0.5px solid black;
+    border-radius: 10px;
+
+    
+}
+/*buttons*/
+.btn-bgstroke {
+    font-size: 20px;
+    display: inline-block;
+    border: 3px solid black;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 300;
+    margin-top: 30px;
+    color: black;
+
+}
+.btn-bgstroke:hover {
+    color: darkgray;
+    border: 3px solid darkgray;
+
+}
+.btn-bgstroke:active {
+    color: black;
+    border: 3px solid black;
+}
+
+.buttonwhite{
+    font-size: 20px;
+    display: inline-block;
+    border: 3px solid white;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.buttonwhite:hover {
+    color: rgb(77, 77, 77);
+    border: 3px solid rgb(77, 77, 77);
+
+}
+.buttonwhite:active{
+    color: white;
+    border: 3px solid white;
+}
