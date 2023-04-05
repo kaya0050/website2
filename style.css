@@ -61,7 +61,7 @@ html {
   
   .buttonimgs {
     animation: 1s ease-out 0s 1 slideInLeft;
-    
+    cursor: pointer;
     padding: 40px;
   }
 
@@ -206,6 +206,7 @@ li {
 }
 .buttonicon{
     border: none;
+    cursor: pointer;
 }
 
 
