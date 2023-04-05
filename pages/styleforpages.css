@@ -8,7 +8,6 @@ html {
     width: 0;  /* Remove scrollbar space */
     background: transparent;  /* Optional: just make scrollbar invisible */
 }
-
 @keyframes fadeout{
     0% {
         opacity:1;
@@ -18,22 +17,6 @@ html {
     }
     
 }
-@keyframes slideInLeft {
-    0% {
-      transform: translateX(-500%);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
-@keyframes slideInRight{
-    0% {
-        transform: translateX(+500%);
-    }
-    100% {
-        transform: translateX(0);
-    }
-  }
 
 .overlay {
     animation: 3s ease-in 0s 1 fadeout;
@@ -56,40 +39,10 @@ html {
       
     
     
-  }
-
-  
-  .buttonimgs {
-    animation: 1s ease-out 0s 1 slideInLeft;
-    
-    padding: 40px;
-  }
-
-
-
-
-
-  header{
-    animation: 1s ease-out 0s 1 slideInRight;
-    
-    padding: 40px;
-  }
-
-
-    
-
-a {
-    color: darkslategrey;
-    font-family: "lato";
-
 }
 
-li {
-    
-    padding: 10px;
-    display: inline;
-    
-}
+
+
 
 .navbar {
     color: white;
@@ -106,7 +59,6 @@ li {
     
 }
 
-
 .banner {
     
     
@@ -119,6 +71,27 @@ li {
 
     border-color: black;
     
+    border-bottom-width: 0;
+    
+    
+    
+    
+
+}
+.contactcard {
+    
+    
+    padding: 60px 0;
+    text-align: center;
+    background-color: white;
+    border: 10px;
+    border-top-width: 0;    
+    border-style: solid;
+
+    border-color: black;
+    font-family: "lato";
+    font-weight: bold;
+    font-size: x-large;
     
     
     
@@ -127,49 +100,8 @@ li {
 
 }
 
-
-.art {
-
-    color: white;
-    font-family: "lato";
-    font-weight: bold;
-    font-size: x-large;
-
-    text-align: center;
-    padding: 50px ;
-    
-    
-    background-color: black
-    
-
-}
-.engines{
-    color: white;
-    font-family: "lato";
-    font-weight: bold;
-    font-size: x-large;
-    
-    text-align: center;
-    padding: 50px 0;
-    
-    
-    background-color: black
-
-    
-}
-
-.programmeren{
-    color: white;
-    font-family: "lato";
-    font-weight: bold;
-    font-size: x-large;
-
-    text-align: center;
-    padding: 50px 0;
-    
-    
-    background-color: black
-
+.buttonicon{
+    border: none;
 }
 
 
@@ -193,32 +125,12 @@ li {
 
 }
 
-
-/* buttons */
-.nestedimg   {
-    width: 200px;
+li {
     
-    border: none;
+    padding: 10px;
+    display: inline;
     
 }
-.buttonimgs{
-    border: none;
-}
-.buttonicon{
-    border: none;
-}
-
-
-button{
-    background: transparent;
-    
-}
-
-input {
-    width: 50px;
-    border-radius: 10px;
-}
-
 img {
     
     width: 50px;
@@ -227,3 +139,20 @@ img {
 
     
 }
+button{
+    background: transparent;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
