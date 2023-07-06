@@ -8,6 +8,33 @@
     <title>contact</title>
 </head>
 <body>
+
+
+
+    <title>Portfolio Preloader</title>
+
+    <script>
+        // JavaScript to animate the loading bar
+        window.addEventListener('load', function() {
+            var loadingBar = document.getElementById('loading-bar');
+            var width = 0;
+            var interval = setInterval(function() {
+                width += 1;
+                loadingBar.style.width = width + '%';
+                if (width >= 100) {
+                    clearInterval(interval);
+                    var preloader = document.getElementById('preloader');
+                    preloader.style.display = 'none';
+                }
+            }, 10);
+        });
+    </script>
+
+    <div id="preloader">
+        <div id="loading-bar"></div>
+    </div>
+
+
     <section class="overlay"></section>
     <section class="navbar">
         <ul>
@@ -30,7 +57,7 @@
     </section>
     <section class="contactcard">
         <h1>email</h1>
-        <a href= "mailto: kaya.businesscontact@gmail.com">kaya.businesscontact@gmail.com</a>
+        <a href= "mailto: kayaboiten8@gmail.com">kayaboiten8@gmail.com</a>
         <h1>email for art</h1>
         <a href="mailto: 0nene0.contact@gmail.com">0nene0.contact@gmail.com</a>
     </section>

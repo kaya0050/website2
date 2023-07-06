@@ -4,14 +4,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styleforpages.css">
+
+    <title>Drawings</title>
 </head>
 <body>
-    <header>Drawings</header>
-    <a href="../index.html">
-        <button>
-            BACK
-        </button>
-    </a>
+    
+    
+    <title>Portfolio Preloader</title>
+
+    <script>
+        // JavaScript to animate the loading bar
+        window.addEventListener('load', function() {
+            var loadingBar = document.getElementById('loading-bar');
+            var width = 0;
+            var interval = setInterval(function() {
+                width += 1;
+                loadingBar.style.width = width + '%';
+                if (width >= 100) {
+                    clearInterval(interval);
+                    var preloader = document.getElementById('preloader');
+                    preloader.style.display = 'none';
+                }
+            }, 10);
+        });
+    </script>
+
+    <div id="preloader">
+        <div id="loading-bar"></div>
+    </div>
+
+
+    <section class="overlay"></section>
+    <section class="navbar">
+        <ul>
+            
+            <a href="../index.html">
+                <button class="buttonicon"><img class="" src="../img's/gifpfp.png"></button>
+            </a>
+            <li>Art</li>
+
+        </ul>
+
+
+    </section>
+    <div class="imagecol">
+        <img src="../img's/art/kingregis.png" alt="" class="images"onclick="window.open(this.src, '_blank');">
+        <img src="../img's/art/INAnew.png" alt="" class="images"onclick="window.open(this.src, '_blank');">
+        <img src="../img's/art/miku_contest.jpg" alt="" class="images"onclick="window.open(this.src, '_blank');">
+        <img src="../img's/art/valentine.png" alt="" class="images"onclick="window.open(this.src, '_blank');">
+        <img src="../img's/art/vtuberdesign.png" alt="" class="images"onclick="window.open(this.src, '_blank');">
+        <img src="../img's/art/rosu.png" alt="" class="images"onclick="window.open(this.src, '_blank');">
+        <img src="../img's/art/chibi.png" alt="" class="images"onclick="window.open(this.src, '_blank');">
+        <img src="../img's/art/cozygirl.png" alt="" class="images"onclick="window.open(this.src, '_blank');">
+        <img src="../img's/art/document_0.png" alt="" class="images"onclick="window.open(this.src, '_blank');">
+        <img src="../img's/art/eye2.png" alt="" class="images"onclick="window.open(this.src, '_blank');">
+        <img src="../img's/art/framed.png" alt="" class="images"onclick="window.open(this.src, '_blank');">
+        <img src="../img's/art/gifpfp.png" alt="" class="images"onclick="window.open(this.src, '_blank');">
+        <img src="../img's/art/hertanobg.png" alt="" class="images"onclick="window.open(this.src, '_blank');">
+        <img src="../img's/art/ina.png" alt="" class="images"onclick="window.open(this.src, '_blank');">
+        <img src="../img's/art/number1.png" alt="" class="images"onclick="window.open(this.src, '_blank');">
+        <img src="../img's/art/lynggirl.png" alt="" class="images"onclick="window.open(this.src, '_blank');">
+        <img src="../img's/art/spirit.png" alt="" class="images"onclick="window.open(this.src, '_blank');">
+        <img src="../img's/art/tie.png" alt="" class="images"onclick="window.open(this.src, '_blank');">
+        
+        
+
+    </div>
+
+        
+
+        
+        
+    
+
+
+
+
+    <section class="footer">
+        <h1>end</h1>
+
+    </section>
+    
+
 </body>
 </html>

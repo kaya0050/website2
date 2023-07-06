@@ -9,6 +9,31 @@
     
 </head>
 <body>
+    <title>Portfolio Preloader</title>
+
+    <script>
+        // JavaScript to animate the loading bar
+        window.addEventListener('load', function() {
+            var loadingBar = document.getElementById('loading-bar');
+            var width = 0;
+            var interval = setInterval(function() {
+                width += 1;
+                loadingBar.style.width = width + '%';
+                if (width >= 100) {
+                    clearInterval(interval);
+                    var preloader = document.getElementById('preloader');
+                    preloader.style.display = 'none';
+                }
+            }, 10);
+        });
+    </script>
+
+    <div id="preloader">
+        <div id="loading-bar"></div>
+    </div>
+
+
+
 
     <!--onlyforfade-->
 <section class="overlay"></section>
@@ -21,15 +46,36 @@
         <ul>
             
             <a href="index.html">
-                <button class="buttonicon"><img class="" src="img's/gifpfp.png"/></button>
+                <button class="buttonicon">
+                    <img class="" src="img's/gifpfp.png"/>
+                </button>
             </a>
             <li>home</li>
-
+            
+            <label for="btnaboutme"><li>about me</li></label>
+            
         </ul>
 
 
     </section>
+    <div class="header"></div>
+    <input type="checkbox" class="btnaboutme" id="btnaboutme">
+    <label for="btnaboutme">
 
+    </label>
+    <div id="btnaboutme">
+      <ul class="btnaboutme">
+        <h1>kaya</h1>
+        
+        
+        
+
+      </ul>
+    </div>
+        <div id='center' class="main center">
+
+        </div>
+    </div>
 
     <section class="banner">
         <h1>__________</h1>
