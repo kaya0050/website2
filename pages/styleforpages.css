@@ -211,6 +211,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     
     padding: 60px 0;
     text-align: center;
+    font-family: "lato";
     background-color: white;
     border: 10px;
     border-width: 10px;

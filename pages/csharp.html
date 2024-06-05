@@ -4,12 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styleforpages.css">
+    <title>c#</title>
 </head>
 <body>
-    <header>helloc#page</header>
-    <a href="../index.html">
-        <button type="button">BACK</button>
-    </a>
+    
+    
+    <title>Portfolio Preloader</title>
+
+    <script>
+        // JavaScript to animate the loading bar
+        window.addEventListener('load', function() {
+            var loadingBar = document.getElementById('loading-bar');
+            var width = 0;
+            var interval = setInterval(function() {
+                width += 1;
+                loadingBar.style.width = width + '%';
+                if (width >= 100) {
+                    clearInterval(interval);
+                    var preloader = document.getElementById('preloader');
+                    preloader.style.display = 'none';
+                }
+            }, 10);
+        });
+    </script>
+
+    <div id="preloader">
+        <div id="loading-bar"></div>
+    </div>
+
+
+    <section class="overlay"></section>
+    <section class="navbar">
+        <ul>
+            
+            <a href="../index.html">
+                <button class="buttonicon"><img class="" src="../img's/gifpfp.png"></button>
+            </a>
+            <li>c#</li>
+
+        </ul>
+    </section>
+    
+    <section class="banner">
+            <H1>monogame</H1>
+        <img src="../img's/csharp/portfolio3dmono.png" alt="" class="images"onclick="window.open(this.src, '_blank');">
+        <img src="../img's/csharp/portfoliobullethell.png" alt="" class="images"onclick="window.open(this.src, '_blank');">
+
+        
+    </section>
+    <section class="footer">
+        <h1>end</h1>
+    </section>
 </body>
 </html>
