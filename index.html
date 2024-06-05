@@ -12,7 +12,7 @@
     <title>Portfolio Preloader</title>
 
     <script>
-        // JavaScript to animate the loading bar
+        
         window.addEventListener('load', function() {
             var loadingBar = document.getElementById('loading-bar');
             var width = 0;
@@ -21,6 +21,7 @@
                 loadingBar.style.width = width + '%';
                 if (width >= 100) {
                     clearInterval(interval);
+                    
                     var preloader = document.getElementById('preloader');
                     preloader.style.display = 'none';
                 }
@@ -42,7 +43,7 @@
 
 
 
-    <section class="navbar">
+<section class="navbar">
         <ul>
             
             <a href="index.html">
@@ -54,32 +55,30 @@
             <a href="pages/cv.pdf">
                 <li>cv</li>
             </a>
-            <label for="btnaboutme"><li>about me</li></label>
+            <label for="btnaboutme"><li>over mij</li></label>
             
         </ul>
 
 
-    </section>
+</section>
+
     <div class="header"></div>
-    <input type="checkbox" class="btnaboutme" id="btnaboutme">
-    <label for="btnaboutme">
+        <input type="checkbox" class="btnaboutme" id="btnaboutme">
+        <label for="btnaboutme">
 
-    </label>
-    <div id="btnaboutme">
-      <ul class="btnaboutme">
+        </label>
+        <div id="btnaboutme">
+        <div class="btnaboutme">
         <h1>kaya</h1>
-        
-        
-        
-
-      </ul>
+        <p>ik ben kaya</p>
+        </div>
     </div>
         <div id='center' class="main center">
 
         </div>
     </div>
 
-    <section class="banner">
+<section class="banner">
         <h1>__________</h1>
         <img src="img's/gifpfp.png" alt="s">
         <p></p>
@@ -90,31 +89,19 @@
         </a>
         
         
-    </section>
+</section>
 
 
 
     <section class="art">
 
-        <h1>Art</h1>
-
-        <header>3dmodels</header>
-        
         
 
+        <header>blender</header>
+        
         <a href="pages\blender.html">
             <button class="buttonimgs"><img class="nestedimg" src="img's/blender.png"/></button>
         </a>
-        
-
-
-        <h1></h1>
-        <header>drawings</header>
-        
-        <a href="pages\drawings.html">
-            <button class="buttonimgs"><img class="nestedimg" src="img's/gifpfp.png"/></button>
-        </a>
-
     </section>
 
     <section class="engines">
@@ -130,12 +117,10 @@
             
         </a>
 
-        <h1></h1>
-        <header>Godot</header>
         
-        <a href="pages\godot.html">
-            <button class="buttonimgs"><img class="nestedimg" src="img's/godot.png"/></button>
-        </a>
+        
+        
+        
 
 
         <h1></h1>
@@ -152,7 +137,7 @@
 
     <section class="programmeren">
 
-        <h1>ProgramingLanguages</h1>
+        <h1>talen</h1>
 
         <header>c#</header>
         
